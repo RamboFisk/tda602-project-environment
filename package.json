@@ -1,0 +1,13 @@
+{
+    "name": "tda602-project-environment",
+    "license": "MIT",
+    "scripts": {
+        "start": "node server.js"
+    },
+    "dependencies": {
+        "cookies": "^0.7.3",
+        "express": "^4.16.4",
+        "express-subdomain": "^1.0.5",
+        "handlebars": "^4.1.2"
+    }
+}

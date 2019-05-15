@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Exploits
+        </title>
+    </head>
+    <body>
+        <h1>Exploits</h1>
+        <ul>
+            {{#each expl}}
+                <li>
+                    <a href="/{{@key}}">
+                        {{@key}}
+                    </a>
+                </li>
+            {{/each}}
+        </ul>
+    </body>
+</html>

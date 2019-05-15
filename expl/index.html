@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            {{expl}}
+        </title>
+    </head>
+    <body>
+        <h1>{{expl}}</h1>
+        <ul>
+            {{#each env}}
+                <li>
+                    <a href="/{{@root.expl}}/{{@key}}">
+                        {{@key}}
+                    </a>
+                </li>
+            {{/each}}
+        </ul>
+    </body>
+</html>

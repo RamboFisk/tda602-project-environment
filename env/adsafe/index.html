@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            ADsafe environment
+        </title>
+        <script src="/static/adsafe.js"></script>
+    </head>
+    <body>
+        {{{trustedElements}}}
+        <div id="adsafe">
+            {{{elements}}}
+            <script type="text/javascript">
+                ADSAFE.go('adsafe', function(dom) {
+                    "use strict";
+                    {{{code}}}
+                });
+            </script>
+        </div>
+    </body>
+</html>

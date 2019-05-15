@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Caja environment
+        </title>
+        <script
+            type="text/javascript"
+            src="https://caja.appspot.com/caja.js"
+        >
+        </script>
+    </head>
+    <body>
+        {{{trustedElements}}}
+        <div id="inner"></div>
+        <script type="text/javascript">
+            caja.initialize({
+                cajaServer: "https://caja.appspot.com",
+                debug: true,
+            });
+            caja.load(document.getElementById("inner"), undefined, function(frame) {
+                frame
+                    .code("/{{expl}}/caja/inner", "text/html")
+                    .run();
+            });
+        </script>
+    </body>
+</html>
